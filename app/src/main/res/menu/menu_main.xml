@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      xmlns:com.raphaelgmelo.ribbit="http://schemas.android.com/apk/res-auto"
+      tools:context=".MainActivity">
+
+
+    <item android:id="@+id/action_camera"
+          com.raphaelgmelo.ribbit:showAsAction="always"
+          android:orderInCategory="0"
+          android:title="Camera"
+          android:icon="@drawable/ic_action_camera"
+          tools:ignore="AppCompatResource"/>
+
+    <item android:id="@+id/action_edit_friends"
+          android:showAsAction="never"
+          android:orderInCategory="100"
+          android:title="Edit Friends"
+          tools:ignore="AppCompatResource"/>
+
+
+    <item android:id="@+id/action_logout"
+          android:showAsAction="never"
+          android:orderInCategory="200"
+          android:title="@string/logout_text"
+          tools:ignore="AppCompatResource"/>
+
+
+
+</menu>
