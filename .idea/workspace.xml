@@ -42,8 +42,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/raphaelgmelo/ribbit/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="23.038462" vertical-offset="2654" max-vertical-offset="5970">
-              <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+            <state vertical-scroll-proportion="-17.576923" vertical-offset="5078" max-vertical-offset="6015">
+              <caret line="372" column="22" selection-start-line="372" selection-start-column="22" selection-end-line="372" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5227#5273#0" expanded="true" />
@@ -55,12 +55,13 @@
       <file leaf-file-name="InboxFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/raphaelgmelo/ribbit/InboxFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3116883" vertical-offset="585" max-vertical-offset="1590">
-              <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.82529116" vertical-offset="1199" max-vertical-offset="1860">
+              <caret line="132" column="39" selection-start-line="132" selection-start-column="39" selection-end-line="132" selection-end-column="39" />
               <folding>
-                <element signature="e#1199#1212#0" expanded="true" />
-                <element signature="e#1462#2655#0" expanded="true" />
-                <element signature="e#2643#2644#0" expanded="true" />
+                <element signature="e#1227#1240#0" expanded="true" />
+                <element signature="e#1490#2683#0" expanded="true" />
+                <element signature="e#2671#2672#0" expanded="true" />
+                <element signature="e#3982#3990#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -903,7 +904,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/com/raphaelgmelo/ribbit/ParseConstants.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/raphaelgmelo/ribbit/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/raphaelgmelo/ribbit/RecipientsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/message_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
@@ -911,6 +911,7 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/raphaelgmelo/ribbit/ViewImageActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/raphaelgmelo/ribbit/MessageAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/raphaelgmelo/ribbit/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/raphaelgmelo/ribbit/InboxFragment.java" />
       </list>
     </option>
@@ -1233,7 +1234,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34340224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34340224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1366,17 +1367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/raphaelgmelo/ribbit/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="23.038462" vertical-offset="2654" max-vertical-offset="5970">
-          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5227#5273#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/raphaelgmelo/ribbit/ViewImageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="735">
@@ -1389,14 +1379,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/raphaelgmelo/ribbit/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.576923" vertical-offset="5078" max-vertical-offset="6015">
+          <caret line="372" column="22" selection-start-line="372" selection-start-column="22" selection-end-line="372" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5227#5273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/raphaelgmelo/ribbit/InboxFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3116883" vertical-offset="585" max-vertical-offset="1590">
-          <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.82529116" vertical-offset="1199" max-vertical-offset="1860">
+          <caret line="132" column="39" selection-start-line="132" selection-start-column="39" selection-end-line="132" selection-end-column="39" />
           <folding>
-            <element signature="e#1199#1212#0" expanded="true" />
-            <element signature="e#1462#2655#0" expanded="true" />
-            <element signature="e#2643#2644#0" expanded="true" />
+            <element signature="e#1227#1240#0" expanded="true" />
+            <element signature="e#1490#2683#0" expanded="true" />
+            <element signature="e#2671#2672#0" expanded="true" />
+            <element signature="e#3982#3990#0" expanded="true" />
           </folding>
         </state>
       </provider>
