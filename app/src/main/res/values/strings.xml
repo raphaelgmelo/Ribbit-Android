@@ -21,5 +21,6 @@
     </string-array>
     <string name="title_activity_recipients">Choose Recipients</string>
     <string name="send">Send</string>
+    <string name="title_activity_view_image">Ribbit</string>
 
 </resources>
