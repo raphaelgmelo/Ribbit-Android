@@ -2,6 +2,7 @@ package com.raphaelgmelo.ribbit;
 
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -25,7 +26,6 @@ public class LoginActivity extends ActionBarActivity {
 
 
     @InjectView(R.id.signUpText) TextView mSignUpTextView;
-
     @InjectView(R.id.usernameField) EditText mUsername;
     @InjectView(R.id.passwordField) TextView mPassword;
     @InjectView(R.id.loginButton) TextView mLoginButton;
@@ -35,12 +35,13 @@ public class LoginActivity extends ActionBarActivity {
         // must be called before setContentView, on methods with indeterminate time of conclusion
         // use this to show progress
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
-
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_login);
-
         ButterKnife.inject(this);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
