@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:id="@+id/backgroundImage"
         android:src="@drawable/background"
-        android:contentDescription="Ribbit Frog Background Image"
+        android:contentDescription="@string/logo_description"
         android:scaleType="fitStart"/>
 
 
@@ -30,7 +30,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A Treehouse Project"
+        android:text="@string/subtitle"
         android:id="@+id/subtitle"
         android:layout_below="@+id/title"
         android:textSize="13sp"
@@ -58,8 +58,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/usernameField"
-            android:hint="Username"
-            android:textColorHint="#BBBBBB"
+            android:hint="@string/username"
+            android:textColorHint="@color/hint_color"
             android:textSize="17sp"/>
 
         <EditText
@@ -69,8 +69,8 @@
             android:ems="10"
             android:id="@+id/passwordField"
             android:layout_below="@+id/usernameField"
-            android:hint="Password"
-            android:textColorHint="#BBBBBB"
+            android:hint="@string/password"
+            android:textColorHint="@color/hint_color"
             android:textSize="17sp"/>
 
     </LinearLayout>
@@ -78,7 +78,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SIGN IN"
+        android:text="@string/login_button"
         android:id="@+id/loginButton"
         android:background="@drawable/button_custom"
         android:layout_below="@+id/editTextLayout"
@@ -91,7 +91,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Don't have an account? Sign up!"
+        android:text="@string/sign_up_cta"
         android:layout_below="@id/loginButton"
         android:layout_marginTop="12dp"
         android:textColor="@android:color/white"

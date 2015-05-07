@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ribbit</string>
+    <string name="app_name">Vitrine</string>
 
 
     <string name="title_section1">Inbox</string>
@@ -21,6 +21,12 @@
     </string-array>
     <string name="title_activity_recipients">Choose Recipients</string>
     <string name="send">Send</string>
-    <string name="title_activity_view_image">Ribbit</string>
+    <string name="title_activity_view_image">Vitrine</string>
+    <string name="logo_description">Vitrine V Background Image</string>
+    <string name="subtitle">O mundo da moda na palma da sua mão</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login_button">SIGN IN</string>
+    <string name="sign_up_cta">Don\'t have an account? Sign up!</string>
 
 </resources>
