@@ -9,7 +9,9 @@
 
     <LinearLayout
         android:id="@+id/editTextLayout"
-        style="@style/AuthFieldContainer">
+        style="@style/AuthFieldContainer"
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true">
 
         <EditText
             android:id="@+id/usernameField"
@@ -46,7 +48,8 @@
         android:id="@+id/signUpButton"
         style="@style/AuthButton"
         android:layout_marginRight="0dp"
-        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignLeft="@id/editTextLayout"
         android:layout_below="@id/editTextLayout"
         android:layout_toLeftOf="@id/buttonDivider"/>
 
@@ -54,8 +57,9 @@
         android:text="@string/label_cancel_button"
         android:id="@+id/cancelButton"
         style="@style/AuthButton"
+        android:layout_marginRight="0dp"
         android:layout_marginLeft="0dp"
-        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/editTextLayout"
         android:layout_below="@id/editTextLayout"
         android:layout_toRightOf="@id/buttonDivider"/>
 

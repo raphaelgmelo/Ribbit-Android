@@ -7,9 +7,12 @@
 
     <include layout="@layout/auth_common"/>
 
+
     <LinearLayout
         android:id="@+id/editTextLayout"
-        style="@style/AuthFieldContainer">
+        style="@style/AuthFieldContainer"
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true">
 
         <EditText
             android:id="@+id/usernameField"
@@ -30,8 +33,9 @@
         android:text="@string/label_login_button"
         android:id="@+id/loginButton"
         style="@style/AuthButton"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/editTextLayout"/>
+        android:layout_below="@id/editTextLayout"
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:layout_width="wrap_content"

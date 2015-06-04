@@ -26,6 +26,7 @@ public class SignUpActivity extends ActionBarActivity {
     @InjectView(R.id.passwordField) TextView mPassword;
     @InjectView(R.id.emailField) TextView mEmail;
     @InjectView(R.id.signUpButton) TextView mSignUpButton;
+    @InjectView(R.id.cancelButton) TextView mCancelButton;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -36,6 +37,14 @@ public class SignUpActivity extends ActionBarActivity {
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+
+        mCancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
 
         mSignUpButton.setOnClickListener(new View.OnClickListener() {
             @Override

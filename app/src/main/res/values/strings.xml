@@ -22,11 +22,15 @@
     <string name="title_activity_recipients">Choose Recipients</string>
     <string name="send">Send</string>
     <string name="title_activity_view_image">Vitrine</string>
-    <string name="logo_description">Vitrine V Background Image</string>
+    <string name="content_desc_logo">Vitrine V Background Image</string>
     <string name="subtitle">O mundo da moda na palma da sua mão</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="login_button">SIGN IN</string>
+    <string name="label_login_button">SIGN IN</string>
+    <string name="label_signup_button">SIGN UP</string>
     <string name="sign_up_cta">Don\'t have an account? Sign up!</string>
+    <string name="email">Email</string>
+    <string name="label_cancel_button">CANCEL</string>
+    <string name="content_desc_button_divider">Button divider</string>
 
 </resources>
