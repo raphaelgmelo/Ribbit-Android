@@ -8,21 +8,21 @@
     <item android:id="@+id/action_camera"
           com.raphaelgmelo.ribbit:showAsAction="always"
           android:orderInCategory="0"
-          android:title="Camera"
-          android:icon="@drawable/ic_action_camera"
+          android:title="@string/label_camera"
+          android:icon="@drawable/ic_menu_camera"
           tools:ignore="AppCompatResource"/>
 
     <item android:id="@+id/action_edit_friends"
           android:showAsAction="never"
           android:orderInCategory="100"
-          android:title="Edit Friends"
+          android:title="@string/label_edit_friends"
           tools:ignore="AppCompatResource"/>
 
 
     <item android:id="@+id/action_logout"
           android:showAsAction="never"
           android:orderInCategory="200"
-          android:title="@string/logout_text"
+          android:title="@string/label_logout"
           tools:ignore="AppCompatResource"/>
 
 

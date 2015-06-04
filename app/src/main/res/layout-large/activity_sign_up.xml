@@ -3,7 +3,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 style="@style/AuthBackground"
-                tools:context="com.raphaelgmelo.ribbit.SignUpActivity">
+                tools:context="com.raphaelgmelo.ribbit.ui.SignUpActivity">
 
     <include layout="@layout/auth_common"/>
 
