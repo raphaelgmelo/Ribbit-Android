@@ -6,7 +6,7 @@
 
 
     <item android:id="@+id/action_camera"
-          com.raphaelgmelo.ribbit:showAsAction="always"
+          android:showAsAction="always"
           android:orderInCategory="0"
           android:title="Camera"
           android:icon="@drawable/ic_action_camera"

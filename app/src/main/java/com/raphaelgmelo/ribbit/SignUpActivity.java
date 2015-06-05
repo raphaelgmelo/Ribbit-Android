@@ -1,13 +1,11 @@
 package com.raphaelgmelo.ribbit;
 
 
+import android.app.ActionBar;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -20,7 +18,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 
-public class SignUpActivity extends ActionBarActivity {
+public class SignUpActivity extends Activity {
 
     @InjectView(R.id.usernameField) EditText mUsername;
     @InjectView(R.id.passwordField) TextView mPassword;
@@ -35,7 +33,7 @@ public class SignUpActivity extends ActionBarActivity {
 
         ButterKnife.inject(this);
 
-        ActionBar actionBar = getSupportActionBar();
+        ActionBar actionBar = getActionBar();
         actionBar.hide();
 
         mCancelButton.setOnClickListener(new View.OnClickListener() {

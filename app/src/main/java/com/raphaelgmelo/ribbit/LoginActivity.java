@@ -1,28 +1,24 @@
 package com.raphaelgmelo.ribbit;
 
+import android.app.ActionBar;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
-import com.parse.SignUpCallback;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 
-public class LoginActivity extends ActionBarActivity {
+public class LoginActivity extends Activity {
 
 
     @InjectView(R.id.signUpText) TextView mSignUpTextView;
@@ -40,7 +36,7 @@ public class LoginActivity extends ActionBarActivity {
         setContentView(R.layout.activity_login);
         ButterKnife.inject(this);
 
-        ActionBar actionBar = getSupportActionBar();
+        ActionBar actionBar = getActionBar();
         actionBar.hide();
 
         mSignUpTextView.setOnClickListener(new View.OnClickListener() {

@@ -1,8 +1,8 @@
 package com.raphaelgmelo.ribbit;
 
 import android.app.AlertDialog;
+import android.app.ListActivity;
 import android.net.Uri;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -16,7 +16,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.parse.FindCallback;
-import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
@@ -32,7 +31,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 
-public class RecipientsActivity extends ActionBarActivity {
+public class RecipientsActivity extends ListActivity {
 
     public static final String TAG = RecipientsActivity.class.getSimpleName();
 
