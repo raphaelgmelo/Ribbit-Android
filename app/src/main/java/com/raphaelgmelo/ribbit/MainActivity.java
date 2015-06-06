@@ -237,7 +237,7 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
             // this tab is selected.
             actionBar.addTab(
                     actionBar.newTab()
-                            .setText(mSectionsPagerAdapter.getPageTitle(i))
+                            .setIcon(mSectionsPagerAdapter.getIcon(i))
                             .setTabListener(this));
         }
     }

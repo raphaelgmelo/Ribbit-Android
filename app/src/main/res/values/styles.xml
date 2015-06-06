@@ -10,9 +10,12 @@
         <item name="android:actionModeBackground">@drawable/cab_background_top_vitrine</item>
         <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_vitrine</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Vitrine</item>
-
         <item name="android:editTextBackground">@drawable/apptheme_edit_text_holo_light</item>
+        <item name="android:actionOverflowButtonStyle">@style/Theme.Vitrine.Overflow</item>
+    </style>
 
+    <style name="Theme.Vitrine.Overflow" parent="@android:style/Widget.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_overflow</item>
     </style>
 
     <style name="ActionBar.Solid.Vitrine" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
@@ -20,6 +23,11 @@
         <item name="android:backgroundStacked">@drawable/ab_stacked_solid_vitrine</item>
         <item name="android:backgroundSplit">@drawable/ab_bottom_solid_vitrine</item>
         <item name="android:progressBarStyle">@style/ProgressBar.Vitrine</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Solid.Vitrine.TitleTextStyle</item>
+    </style>
+
+    <style name="ActionBar.Solid.Vitrine.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/text_color</item>
     </style>
 
     <style name="ActionBar.Transparent.Vitrine" parent="@android:style/Widget.Holo.Light.ActionBar">
