@@ -1,6 +1,7 @@
 package com.raphaelgmelo.ribbit;
 
 import android.content.Context;
+import android.text.format.DateUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 
 import com.parse.ParseObject;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -40,6 +42,7 @@ public class MessageAdapter extends ArrayAdapter<ParseObject> {
             holder = new ViewHolder();
             holder.iconImageView = (ImageView) convertView.findViewById(R.id.messageIcon);
             holder.nameLabel = (TextView) convertView.findViewById(R.id.senderLabel);
+            holder.timeLabel = (TextView) convertView.findViewById(R.id.timeLabel);
             convertView.setTag(holder);
         }
         else{
@@ -50,11 +53,22 @@ public class MessageAdapter extends ArrayAdapter<ParseObject> {
 
         ParseObject message = mMessages.get(position);
 
+        Date createdAt = message.getCreatedAt();
+        long now = new Date().getTime();
+
+        String convertedDate = DateUtils.getRelativeTimeSpanString(
+                createdAt.getTime(),
+                now,
+                DateUtils.SECOND_IN_MILLIS
+        ).toString();
+
+        holder.timeLabel.setText(convertedDate);
+
         if (message.getString(ParseConstants.KEY_FILE_TYPE).equals(ParseConstants.TYPE_IMAGE)) {
-            holder.iconImageView.setImageResource(R.drawable.ic_action_picture);
+            holder.iconImageView.setImageResource(R.drawable.ic_picture);
         }
         else if (message.getString(ParseConstants.KEY_FILE_TYPE).equals(ParseConstants.TYPE_VIDEO)){
-            holder.iconImageView.setImageResource(R.drawable.ic_action_play_over_video);
+            holder.iconImageView.setImageResource(R.drawable.ic_video);
         }
         holder.nameLabel.setText(message.getString(ParseConstants.KEY_SENDER_NAME));
 
@@ -67,6 +81,7 @@ public class MessageAdapter extends ArrayAdapter<ParseObject> {
 
         ImageView iconImageView;
         TextView nameLabel;
+        TextView timeLabel;
 
     }
 

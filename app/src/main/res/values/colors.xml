@@ -11,4 +11,8 @@
     <color name="text_color">#ff004646</color>
     <color name="hint_color">#bbbbbb</color>
 
+    <color name="light_green_background">#e7f6f6</color>
+
+    <color name="light_gray">#cccccc</color>
+
 </resources>

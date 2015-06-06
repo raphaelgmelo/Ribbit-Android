@@ -12,6 +12,13 @@
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Vitrine</item>
         <item name="android:editTextBackground">@drawable/apptheme_edit_text_holo_light</item>
         <item name="android:actionOverflowButtonStyle">@style/Theme.Vitrine.Overflow</item>
+        <item name="android:listViewStyle">@style/Theme.Vitrine.LightGreenBackground</item>
+        <item name="android:gridViewStyle">@style/Theme.Vitrine.LightGreenBackground</item>
+    </style>
+
+    <style name="Theme.Vitrine.LightGreenBackground">
+        <item name="android:background">@color/light_green_background</item>
+        <item name="android:divider">@null</item>
     </style>
 
     <style name="Theme.Vitrine.Overflow" parent="@android:style/Widget.ActionButton.Overflow">
