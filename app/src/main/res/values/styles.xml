@@ -1,8 +1,65 @@
 <resources>
 
-    <style name="AppTheme" parent="android:Theme.Holo.Light">
+    <style name="Theme.Vitrine" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_vitrine</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Vitrine</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Vitrine</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Vitrine</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Vitrine</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Vitrine</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_vitrine</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_vitrine</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Vitrine</item>
+
         <item name="android:editTextBackground">@drawable/apptheme_edit_text_holo_light</item>
+
     </style>
+
+    <style name="ActionBar.Solid.Vitrine" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid_vitrine</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_vitrine</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_vitrine</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Vitrine</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Vitrine" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_vitrine</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Vitrine</item>
+    </style>
+
+    <style name="PopupMenu.Vitrine" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_vitrine</item>
+    </style>
+
+    <style name="DropDownListView.Vitrine" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_vitrine</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Vitrine" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_vitrine</item>
+    </style>
+
+    <style name="DropDownNav.Vitrine" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_vitrine</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_vitrine</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_vitrine</item>
+    </style>
+
+    <style name="ProgressBar.Vitrine" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_vitrine</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Vitrine" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_vitrine</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Vitrine.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Vitrine</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Vitrine</item>
+    </style>
+
+
 
 
     <style name="AuthBackground">
