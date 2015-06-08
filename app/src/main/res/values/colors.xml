@@ -15,4 +15,10 @@
 
     <color name="light_gray">#cccccc</color>
 
+
+    <color name="swipeRefresh1">#b1e5e5</color>
+    <color name="swipeRefresh2">#77d2d2</color>
+    <color name="swipeRefresh3">#00aaaa</color>
+    <color name="swipeRefresh4">#b1e5e5</color>
+
 </resources>
