@@ -20,6 +20,9 @@ import com.raphaelgmelo.ribbit.adapters.UserAdapter;
 
 import java.util.List;
 
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+
 /**
  * Created by raphaelgmelo on 19/04/15.
  */
@@ -30,18 +33,17 @@ public class FriendsFragment extends Fragment {
     protected List<ParseUser> mFriends;
     protected ParseRelation<ParseUser> mFriendsRelation;
     protected ParseUser mCurrentUser;
-    protected GridView mGridView;
+    @InjectView(R.id.friendsGrid) GridView mGridView;
+    @InjectView(android.R.id.empty) TextView mEmptyTextView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.user_grid, container, false);
+        ButterKnife.inject(this, rootView);
 
-        mGridView = (GridView)rootView.findViewById(R.id.friendsGrid);
-        TextView emptyTextView = (TextView)rootView.findViewById(android.R.id.empty);
-
-        mGridView.setEmptyView(emptyTextView);
+        mGridView.setEmptyView(mEmptyTextView);
 
         return rootView;
     }

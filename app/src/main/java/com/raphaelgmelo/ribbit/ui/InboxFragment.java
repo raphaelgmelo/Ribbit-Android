@@ -24,13 +24,16 @@ import com.raphaelgmelo.ribbit.R;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+
 /**
  * Created by raphaelgmelo on 19/04/15.
  */
 public class InboxFragment extends ListFragment {
 
+    @InjectView(R.id.swipeRefreshLayout) SwipeRefreshLayout mSwipeRefreshLayout;
     protected List<ParseObject> mMessages;
-    protected SwipeRefreshLayout mSwipeRefreshLayout;
     private static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
@@ -38,8 +41,8 @@ public class InboxFragment extends ListFragment {
                              Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_inbox, container, false);
+        ButterKnife.inject(this, rootView);
 
-        mSwipeRefreshLayout = (SwipeRefreshLayout)rootView.findViewById(R.id.swipeRefreshLayout);
         mSwipeRefreshLayout.setOnRefreshListener(mOnRefreshListener);
         mSwipeRefreshLayout.setColorSchemeColors(
                 R.color.swipeRefresh1,
