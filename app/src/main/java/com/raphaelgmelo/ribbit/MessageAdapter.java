@@ -17,80 +17,58 @@ import java.util.List;
 /**
  * Created by raphaelgmelo on 21/04/15.
  */
-public class MessageAdapter extends ArrayAdapter<ParseObject> {
+public class MessageAdapter extends ArrayAdapter<ParseObject>{
 
     protected Context mContext;
     protected List<ParseObject> mMessages;
 
     public MessageAdapter(Context context, List<ParseObject> messages) {
-        super(context, R.layout.message_item, messages);
-
+        super(context, R.layout.message_item,messages);
         mContext = context;
-        mMessages = messages;
+        mMessages  = messages;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
         ViewHolder holder;
 
         if (convertView == null) {
-
-            // inflate view
-
             convertView = LayoutInflater.from(mContext).inflate(R.layout.message_item, null);
             holder = new ViewHolder();
             holder.iconImageView = (ImageView) convertView.findViewById(R.id.messageIcon);
             holder.nameLabel = (TextView) convertView.findViewById(R.id.senderLabel);
-            holder.timeLabel = (TextView) convertView.findViewById(R.id.timeLabel);
+            holder.timeLabel = (TextView)convertView.findViewById(R.id.timeLabel);
+
             convertView.setTag(holder);
-        }
-        else{
-            // the view is already inflated... reuse it!
+
+        }else{
             holder = (ViewHolder)convertView.getTag();
-
         }
-
+        //How to set the time label...VERY IMPORTANT
         ParseObject message = mMessages.get(position);
-
         Date createdAt = message.getCreatedAt();
         long now = new Date().getTime();
-
-        String convertedDate = DateUtils.getRelativeTimeSpanString(
-                createdAt.getTime(),
-                now,
-                DateUtils.SECOND_IN_MILLIS
-        ).toString();
-
+        String convertedDate = DateUtils.getRelativeTimeSpanString(createdAt.getTime(), now, DateUtils.SECOND_IN_MILLIS).toString();
         holder.timeLabel.setText(convertedDate);
 
-        if (message.getString(ParseConstants.KEY_FILE_TYPE).equals(ParseConstants.TYPE_IMAGE)) {
+        if (message.getString(ParseConstants.KEY_FILE_TYPE).equals(ParseConstants.TYPE_IMAGE)){
             holder.iconImageView.setImageResource(R.drawable.ic_picture);
-        }
-        else if (message.getString(ParseConstants.KEY_FILE_TYPE).equals(ParseConstants.TYPE_VIDEO)){
+        } else {
             holder.iconImageView.setImageResource(R.drawable.ic_video);
         }
+
         holder.nameLabel.setText(message.getString(ParseConstants.KEY_SENDER_NAME));
 
         return convertView;
     }
-
-
-    // this class reflects the view
-    private static class ViewHolder {
-
+    private static class ViewHolder{
         ImageView iconImageView;
         TextView nameLabel;
         TextView timeLabel;
-
     }
-
-
-
     public void refill(List<ParseObject> messages){
         mMessages.clear();
-        messages.addAll(messages);
+        mMessages.addAll(messages);
         notifyDataSetChanged();
     }
-
 }
