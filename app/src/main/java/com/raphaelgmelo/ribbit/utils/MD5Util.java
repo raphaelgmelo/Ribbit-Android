@@ -1,6 +1,5 @@
-package com.raphaelgmelo.ribbit;
+package com.raphaelgmelo.ribbit.utils;
 
-import java.util.*;
 import java.io.*;
 import java.security.*;
 public class MD5Util {

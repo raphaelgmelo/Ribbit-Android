@@ -1,4 +1,4 @@
-package com.raphaelgmelo.ribbit;
+package com.raphaelgmelo.ribbit.adapters;
 
 import android.content.Context;
 import android.text.format.DateUtils;
@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.parse.ParseObject;
+import com.raphaelgmelo.ribbit.R;
+import com.raphaelgmelo.ribbit.utils.ParseConstants;
 
 import java.util.Date;
 import java.util.List;

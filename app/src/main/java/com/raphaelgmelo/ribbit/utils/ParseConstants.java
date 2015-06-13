@@ -1,9 +1,9 @@
-package com.raphaelgmelo.ribbit;
+package com.raphaelgmelo.ribbit.utils;
 
 /**
  * Created by raphaelgmelo on 19/04/15.
  */
-final class ParseConstants {
+public final class ParseConstants {
     //Class names
     public static final String CLASS_MESSAGES = "Messages";
 
