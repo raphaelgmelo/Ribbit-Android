@@ -7,7 +7,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
@@ -17,9 +16,6 @@ import com.parse.ParseRelation;
 import com.parse.ParseUser;
 
 import java.util.List;
-
-import butterknife.ButterKnife;
-import butterknife.InjectView;
 
 /**
  * Created by raphaelgmelo on 19/04/15.
@@ -37,7 +33,7 @@ public class FriendsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_friends, container, false);
+        View rootView = inflater.inflate(R.layout.user_grid, container, false);
 
         mGridView = (GridView)rootView.findViewById(R.id.friendsGrid);
         TextView emptyTextView = (TextView)rootView.findViewById(android.R.id.empty);
