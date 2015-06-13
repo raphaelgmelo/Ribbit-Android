@@ -1,9 +1,7 @@
-package com.raphaelgmelo.ribbit;
+package com.raphaelgmelo.ribbit.ui;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.ListActivity;
-import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,7 +10,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -27,6 +24,10 @@ import com.parse.ParseQuery;
 import com.parse.ParseRelation;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
+import com.raphaelgmelo.ribbit.utils.FileHelper;
+import com.raphaelgmelo.ribbit.utils.ParseConstants;
+import com.raphaelgmelo.ribbit.R;
+import com.raphaelgmelo.ribbit.adapters.UserAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

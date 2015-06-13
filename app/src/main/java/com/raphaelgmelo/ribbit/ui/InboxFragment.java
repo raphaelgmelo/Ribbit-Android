@@ -1,11 +1,10 @@
-package com.raphaelgmelo.ribbit;
+package com.raphaelgmelo.ribbit.ui;
 
 import android.app.ListFragment;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +16,10 @@ import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
+import com.raphaelgmelo.ribbit.adapters.MessageAdapter;
+
+import com.raphaelgmelo.ribbit.utils.ParseConstants;
+import com.raphaelgmelo.ribbit.R;
 
 import java.util.ArrayList;
 import java.util.List;

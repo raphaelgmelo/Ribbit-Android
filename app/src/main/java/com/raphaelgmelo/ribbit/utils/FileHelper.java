@@ -1,4 +1,4 @@
-package com.raphaelgmelo.ribbit;
+package com.raphaelgmelo.ribbit.utils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

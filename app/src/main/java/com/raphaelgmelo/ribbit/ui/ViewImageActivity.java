@@ -1,10 +1,11 @@
-package com.raphaelgmelo.ribbit;
+package com.raphaelgmelo.ribbit.ui;
 
 import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageView;
 
+import com.raphaelgmelo.ribbit.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.Timer;

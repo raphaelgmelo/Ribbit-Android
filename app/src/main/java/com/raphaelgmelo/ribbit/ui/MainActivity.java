@@ -1,4 +1,4 @@
-package com.raphaelgmelo.ribbit;
+package com.raphaelgmelo.ribbit.ui;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -19,6 +19,9 @@ import android.widget.Toast;
 
 import com.parse.ParseAnalytics;
 import com.parse.ParseUser;
+import com.raphaelgmelo.ribbit.utils.ParseConstants;
+import com.raphaelgmelo.ribbit.R;
+import com.raphaelgmelo.ribbit.adapters.SectionsPagerAdapter;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -176,19 +179,8 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 
     };
 
-    /**
-     * The {@link android.support.v4.view.PagerAdapter} that will provide
-     * fragments for each of the sections. We use a
-     * {@link FragmentPagerAdapter} derivative, which will keep every
-     * loaded fragment in memory. If this becomes too memory intensive, it
-     * may be best to switch to a
-     * {@link android.support.v4.app.FragmentStatePagerAdapter}.
-     */
     SectionsPagerAdapter mSectionsPagerAdapter;
 
-    /**
-     * The {@link ViewPager} that will host the section contents.
-     */
     ViewPager mViewPager;
 
     @Override

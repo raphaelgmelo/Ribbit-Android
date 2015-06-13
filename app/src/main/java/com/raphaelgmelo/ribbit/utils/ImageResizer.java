@@ -1,6 +1,4 @@
-package com.raphaelgmelo.ribbit;
-
-import java.io.ByteArrayOutputStream;
+package com.raphaelgmelo.ribbit.utils;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

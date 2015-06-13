@@ -1,4 +1,4 @@
-package com.raphaelgmelo.ribbit;
+package com.raphaelgmelo.ribbit.adapters;
 
 /**
  * Created by raphaelgmelo on 19/04/15.
@@ -8,7 +8,10 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.support.v13.app.FragmentPagerAdapter;
-import android.util.Log;
+
+import com.raphaelgmelo.ribbit.R;
+import com.raphaelgmelo.ribbit.ui.InboxFragment;
+import com.raphaelgmelo.ribbit.ui.FriendsFragment;
 
 import java.util.Locale;
 

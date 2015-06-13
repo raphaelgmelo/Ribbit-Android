@@ -1,4 +1,4 @@
-package com.raphaelgmelo.ribbit;
+package com.raphaelgmelo.ribbit.ui;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
@@ -14,6 +14,9 @@ import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseRelation;
 import com.parse.ParseUser;
+import com.raphaelgmelo.ribbit.utils.ParseConstants;
+import com.raphaelgmelo.ribbit.R;
+import com.raphaelgmelo.ribbit.adapters.UserAdapter;
 
 import java.util.List;
 

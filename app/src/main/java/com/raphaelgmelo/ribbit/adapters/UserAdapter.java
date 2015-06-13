@@ -1,7 +1,6 @@
-package com.raphaelgmelo.ribbit;
+package com.raphaelgmelo.ribbit.adapters;
 
 import android.content.Context;
-import android.text.format.DateUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,12 +9,11 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.parse.Parse;
-import com.parse.ParseObject;
 import com.parse.ParseUser;
+import com.raphaelgmelo.ribbit.utils.MD5Util;
+import com.raphaelgmelo.ribbit.R;
 import com.squareup.picasso.Picasso;
 
-import java.util.Date;
 import java.util.List;
 
 /**
